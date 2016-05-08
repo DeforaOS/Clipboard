@@ -31,8 +31,8 @@ ALL_LINGUAS="ca cs da de es es_ES et fr hu it ja nb pl pl pt_BR ro ru sv tr zh_C
 AM_GLIB_GNU_GETTEXT()
 AC_PROG_INTLTOOL([0.23])
 
-clipitlocaledir='${prefix}/${DATADIRNAME}/locale'
-AC_SUBST(clipitlocaledir)
+clipboardlocaledir='${prefix}/${DATADIRNAME}/locale'
+AC_SUBST(clipboardlocaledir)
 
 AM_GNU_GETTEXT([external])
 AM_GNU_GETTEXT_VERSION(0.18.1)

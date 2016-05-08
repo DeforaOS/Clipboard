@@ -2,7 +2,7 @@
 *.gmo
 *.m4
 stamp-h1
-src/clipit
+src/clipboard
 src/.deps
 config.*
 configure

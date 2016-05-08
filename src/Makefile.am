@@ -1,15 +1,15 @@
 AM_CPPFLAGS = -I$(top_srcdir)
-AM_CFLAGS = -Wall -g -DCLIPITLOCALEDIR=\""$(clipitlocaledir)"\"
+AM_CFLAGS = -Wall -g -DCLIPITLOCALEDIR=\""$(clipboardlocaledir)"\"
 ## FIXME!!!
 INCLUDES = $(GTK_CFLAGS) $(APPINDICATOR_CFLAGS)
 LDADD = $(GTK_LIBS) $(APPINDICATOR_LIBS) $(X11_LIBS)
 AM_LDFLAGS = -Wl,--as-needed
 
-bin_PROGRAMS = clipit
+bin_PROGRAMS = clipboard
 
 DISTCLEANFILES = *.bak *.log *~ .deps/*.P
 
-clipit_SOURCES = main.c main.h \
+clipboard_SOURCES = main.c main.h \
 			utils.c utils.h \
 			clipit-i18n.h\
 			daemon.c daemon.h \
