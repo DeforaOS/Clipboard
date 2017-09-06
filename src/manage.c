@@ -408,13 +408,13 @@ gboolean show_search()
   gtk_container_add((GtkContainer*)scrolled_window_search, treeview_search);
   gtk_box_pack_start((GtkBox*)vbox_search, scrolled_window_search, TRUE, TRUE, 0);
 
-  GtkWidget* edit_button = gtk_dialog_add_button((GtkDialog*)search_dialog, _("Edit"), 1);
+  GtkWidget* edit_button = gtk_dialog_add_button((GtkDialog*)search_dialog, GTK_STOCK_EDIT, 1);
   g_signal_connect((GObject*)edit_button, "clicked", (GCallback)edit_selected, NULL);
-  GtkWidget* remove_button = gtk_dialog_add_button((GtkDialog*)search_dialog, _("Remove"), 1);
+  GtkWidget* remove_button = gtk_dialog_add_button((GtkDialog*)search_dialog, GTK_STOCK_REMOVE, 1);
   g_signal_connect((GObject*)remove_button, "clicked", (GCallback)remove_selected, NULL);
   GtkWidget* remove_all_button = gtk_dialog_add_button((GtkDialog*)search_dialog, _("Remove all"), 1);
   g_signal_connect((GObject*)remove_all_button, "clicked", (GCallback)remove_all_selected, NULL);
-  GtkWidget* close_button = gtk_dialog_add_button((GtkDialog*)search_dialog, _("Close"), GTK_RESPONSE_OK);
+  GtkWidget* close_button = gtk_dialog_add_button((GtkDialog*)search_dialog, GTK_STOCK_CLOSE, GTK_RESPONSE_OK);
   g_signal_connect((GObject*)close_button, "clicked", (GCallback)search_history, NULL);
 
   GtkTreeSelection* search_selection = gtk_tree_view_get_selection((GtkTreeView*)treeview_search);
