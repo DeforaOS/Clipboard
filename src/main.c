@@ -280,17 +280,17 @@ static void show_about_dialog(GtkMenuItem *menu_item, gpointer user_data) {
     gtk_window_set_icon((GtkWindow*)about_dialog,
                         gtk_widget_render_icon(about_dialog, GTK_STOCK_ABOUT, GTK_ICON_SIZE_MENU, NULL));
 
-    gtk_about_dialog_set_program_name((GtkAboutDialog*)about_dialog, "ClipIt");
+    gtk_about_dialog_set_program_name((GtkAboutDialog*)about_dialog, PACKAGE);
     #ifdef HAVE_CONFIG_H
     gtk_about_dialog_set_version((GtkAboutDialog*)about_dialog, VERSION);
     #endif
     gtk_about_dialog_set_comments((GtkAboutDialog*)about_dialog,
-                                _("Lightweight GTK+ clipboard manager."));
+                                _("Clipboard manager for the DeforaOS desktop"));
 
     gtk_about_dialog_set_website((GtkAboutDialog*)about_dialog,
-                                 "https://github.com/shantzu/ClipIt");
+                                 "https://www.defora.org/");
 
-    gtk_about_dialog_set_copyright((GtkAboutDialog*)about_dialog, "Copyright (C) 2010-2012 Cristian Henzel");
+    gtk_about_dialog_set_copyright((GtkAboutDialog*)about_dialog, "Copyright (c) 2010-2012 Cristian Henzel");
     gtk_about_dialog_set_authors((GtkAboutDialog*)about_dialog, authors);
     gtk_about_dialog_set_translator_credits ((GtkAboutDialog*)about_dialog,
                                              "Guido Tabbernuk <boamaod@gmail.com>\n"
