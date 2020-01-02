@@ -3,6 +3,7 @@ _Name=Clipboard
 _Comment=Clipboard Manager
 Icon=clipit-trayicon
 Exec=clipboard
+TryExec=clipboard
 Terminal=false
 Type=Application
 OnlyShowIn=GNOME;XFCE;LXDE;Unity;
