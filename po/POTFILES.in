@@ -1,5 +1,5 @@
-data/clipit-startup.desktop.in
-data/clipit.desktop.in
+data/clipboard-startup.desktop.in
+data/clipboard.desktop.in
 src/daemon.c
 src/history.c
 src/keybinder.c
