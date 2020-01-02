@@ -1,8 +1,8 @@
 [Desktop Entry]
-_Name=ClipIt
+_Name=Clipboard
 _Comment=Clipboard Manager
 Icon=clipit-trayicon
-Exec=clipit
+Exec=clipboard
 Terminal=false
 Type=Application
 Categories=GTK;GNOME;Application;Utility;
