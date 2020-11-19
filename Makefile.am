@@ -30,6 +30,8 @@ check-gettext:
 	@if test x$(USE_NLS) != "xyes" ; then echo "Missing gettext. Rerun configure and check for" \
 	"'checking whether to use NLS... yes'!" ; exit 1 ; fi
 
+tests:
+
 update-po: check-gettext
 	@find $(srcdir)/ -name '*.c' -o -name '*.desktop.in' | sed "s/^.\///" | grep -v "eggaccelerators" | grep -v "^clipit-" | sort > $(srcdir)/po/POTFILES.in.2 ; \
 	cat $(srcdir)/po/POTFILES.in.2 ; \
